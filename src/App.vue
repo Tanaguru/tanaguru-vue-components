@@ -1,17 +1,19 @@
 <template>
   <main>
     <h1>Demo</h1>
-    <DemoButtons />
+
+    <BackToTop/>
+
   </main>
 </template>
 
 <script>
-import DemoButtons from './Demos/DemoButtons'
+import BackToTop from './components/BackToTop'
 
 export default {
   name: 'App',
   components: {
-    DemoButtons,
+    BackToTop,
   }
 }
 </script>
