@@ -1,16 +1,19 @@
 <template>
   <main>
     <h1>Demo</h1>
-    <DemoButtons />
+    <DemoButtons/>
+    <DemoTextField/>
   </main>
 </template>
 
 <script>
-import DemoButtons from './Demos/DemoButtons'
+import DemoButtons from '@/Demos/DemoButtons'
+import DemoTextField from "@/Demos/DemoTextField";
 
 export default {
   name: 'App',
   components: {
+    DemoTextField,
     DemoButtons,
   }
 }
@@ -18,5 +21,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
- 
+  html{
+    padding: 50px;
+  }
 </style>

@@ -145,7 +145,7 @@
 		box-shadow: none; // to remove default browser validation
 	}
 
-	&.has-error {
+	&.invalid {
 		margin-bottom: -2px; // to avoid the moving effect on focus and hover with the border
 		border-bottom: 2px solid $color-warning;
 		color: $color-warning;
@@ -153,6 +153,17 @@
 		&:hover,
 		&:focus {
 			border-bottom: 2px solid $color-warning;
+		}
+	}
+
+	&.valid {
+		margin-bottom: -2px; // to avoid the moving effect on focus and hover with the border
+		border-bottom: 2px solid $color-good;
+		color: $color-good;
+
+		&:hover,
+		&:focus {
+			border-bottom: 2px solid $color-good;
 		}
 	}
 }
